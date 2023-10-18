@@ -1,0 +1,53 @@
+package junit1;
+
+public class addition1 {
+public int add(int a,int b) {
+return(a+b);
+
+}
+
+public String concat(String a , String b) {
+	return(a+" "+b);
+	
+}
+}
+
+
+test case 
+
+
+package junit1;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class addition1Test {
+
+	@Test
+	void test() {
+		addition1 obj=new addition1();
+		int sum=obj.add(2, 3);
+		assertEquals(5,sum);
+	}
+
+}
+
+test case2
+package junit1;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class addition1Test2 {
+
+	@Test
+	void test() {
+		addition1 obj2= new addition1();
+		String c=obj2.concat("yuvi","kapil");
+		assertEquals("yuvi kapil",c);
+	}
+
+}
+
